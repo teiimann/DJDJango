@@ -21,7 +21,7 @@ def todo(request):
             todo.save()
             return redirect('/todo')
         if 'Delete' in request.POST:
-            checkedlist = request.POST.getlist('checkbox')
+            checkedlist = request.POST.getlist('checkedbox')
 
             for i in range(len(checkedlist)):
                 todo = TodoList.objects.filter(id=int(checkedlist[i]))

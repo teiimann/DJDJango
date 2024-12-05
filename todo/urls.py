@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', redirect_view),
     path('todo/', todo, name="todo"),
-    path('category/', category, name="categpry")    
+    path('category/', category, name="category")    
 ]
